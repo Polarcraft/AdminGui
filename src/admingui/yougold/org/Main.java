@@ -21,7 +21,6 @@ import admingui.yougold.org.events.MenuClickListener;
 public class Main extends JavaPlugin {
 
 	public void onEnable() {
-		//Implements Listeners and Commands
 		getServer().getPluginManager().registerEvents(new MenuClickListener(), this);
 		getCommand("feed").setExecutor(new Feed());
 		getCommand("heal").setExecutor(new Heal());
